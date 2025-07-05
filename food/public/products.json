@@ -1,0 +1,31 @@
+[
+    {
+        "img":"./images/food-1.png",
+        "name":"Курочка BARBEQUE",
+        "time":"15 минут",
+        "price":"120 руб."
+    },
+    {
+        "img":"./images/food-4.png",
+        "name":"Рождественский сюрпризво ",
+        "time":"15 минут",
+        "price":"120 руб."
+    },
+    {
+        "img":"./images/food-3.png",
+        "name":"Курочка BARBEQUE",
+        "time":"15 минут",
+        "price":"120 руб."
+    },
+    {
+        "img2":"./images/food-4.png",
+        "name":"Курочка BARBEQUE",
+        "time":"15 минут"
+    },
+    {
+        "img3":"./images/food-5.png"
+    },
+    {
+        "img3":"./images/food-6.png"
+    }
+]

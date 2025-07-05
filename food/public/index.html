@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ibrohim" />
+    <meta
+      name="description"
+      content="Ushbu sayt ovqtlarni online buyurtma qilish uchun ishlatiladi."
+    />
+    <meta name="technology" content="technology: HTML, CSS, JS" />
+    <title>Магазин-Лайм</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <button aria-label="Bizga qo‘ng‘iroq qiling">
+              <i class="fa-solid fa-phone-volume"></i> <span>7756</span>
+            </button>
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <select aria-label="Do‘kon manzilini tanlang">
+              <option>Магазины</option>
+            </select>
+          </li>
+          <li><i class="fa-solid fa-truck"></i><span>Зона доставки</span></li>
+          <li>
+            <i class="fa-solid fa-clock"></i>
+            <select aria-label="Yetkazib berish vaqti">
+              <option>17:00 - 17:45</option>
+              <option>16:00 - 17:45</option>
+              <option>15:00 - 17:45</option>
+              <option>14:00 - 17:45</option>
+            </select>
+          </li>
+          <li class="img">
+            <img src="./images/logo-laym.png" alt="Laym do‘kon logotipi" />
+          </li>
+          <li><a href="#">Шеф-лайм</a></li>
+          <li><a href="#">Вакансии</a></li>
+          <li><a href="#">Вопрос-ответ</a></li>
+          <li><a href="#">Партнерам</a></li>
+          <li><a href="#">Бонусная программа</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav">
+        <div class="btn-inp">
+          <button class="btn" aria-label="Katalogni ochish">
+            <i class="fa-solid fa-magnifying-glass"></i> Каталог
+          </button>
+          <div class="input">
+            <input
+              type="text"
+              placeholder="Купить молоко"
+              aria-label="Mahsulot qidirish"
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <ul>
+          <li>
+            <div class="discount">
+              <div class="btn2">%</div>
+              <select aria-label="Chegirmalarni tanlang">
+                <option>Скидки</option>
+              </select>
+            </div>
+          </li>
+          <li><i class="fa-solid fa-user"></i> <a href="#">Кабинет</a></li>
+          <li><i class="fa-solid fa-heart"></i> <a href="#">Избранное</a></li>
+          <li>
+            <i class="fa-solid fa-cart-shopping"></i> <a href="#">Корзина</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <section>
+          <h2>Рецепты</h2>
+          <div class="selects">
+            <select>
+              <option value="Категория">Категория</option>
+              <option value="Салаты">Салаты</option>
+              <option value="Время приготовления">Время приготовления</option>
+            </select>
+            <select>
+              <option value="Кухня">Кухня</option>
+              <option value="Время приготовления">Время приготовления</option>
+            </select>
+            <select>
+              <option value="Время приготовления">Время приготовления</option>
+              <option value="Время приготовления">Время приготовления</option>
+            </select>
+            <select>
+              <option value="Продукты">Продукты</option>
+            </select>
+          </div>
+          <h2>Салаты</h2>
+          <div class="three-cards">
+            <div class="food-card">
+              <!-- <img src="./images/food-1.png" alt=""> -->
+              <h3 class="food-name"></h3>
+              <div class="stars">
+                <p class="time"></p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+
+              </div>
+              <button class="order-btn">Купить ингредиенты</button>
+            </div>
+            <div class="food-card">
+              <!-- <img src="./images/food-1.png" alt=""> -->
+              <h3 class="food-name"></h3>
+              <div class="stars">
+                <p class="time"></p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="order-btn">Купить ингредиенты</button>
+            </div>
+            <div class=" food-card">
+              <!-- <img src="./images/food-1.png" alt=""> -->
+              <h3 class="food-name"></h3>
+              <div class="stars">
+                <p class="time"></p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <button class="order-btn">Купить ингредиенты</button>
+            </div>
+            
+          </div>
+        </section>
+        <article class="order-article">
+          <div class="cards">
+            <!-- <div class="order-card">
+              <img src="./images/food-5 sugar.png" alt="">
+              <div class="counter">
+                <div class="plus">+</div>
+                <span class="count">0</span>
+                <div class="minus">-</div>
+              </div>
+              <div class="info">
+                <p>Макаронные изделия Макфа</p>
+                <strong>120 руб.</strong>
+              </div>
+              <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div> -->
+          </div>
+          <div class="order">
+            <div class="price">
+              <p>Итого,руб:</p>
+              <strong>120,85</strong>
+            </div>
+            <button class="order-btn">Подтвердить заказ</button>
+          </div>
+        </article>
+      </main>
+      <script src="main.js"></script>
+  </body>
+</html>
