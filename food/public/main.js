@@ -1,4 +1,4 @@
-const API = './products.json'
+const API = './products.json';
 const imgPush = () => {
   fetch(API)
     .then((res) => res.json())
@@ -33,14 +33,14 @@ const cartContainer = document.querySelector('.cards');
 orderBtns.forEach((btn, index) => {
   btn.addEventListener('click', () => {
     fetch(API)
-      .then(res => res.json())
-      .then(data => {
+      .then((res) => res.json())
+      .then((data) => {
         const item = data[index];
         if (!item) return;
 
         const name = item.name;
         const imgSrc = item.img;
-        const price = item.price;
+        const price = Number(item.price);
 
         const orderCard = document.createElement('div');
         orderCard.classList.add('order-card');
@@ -53,7 +53,7 @@ orderBtns.forEach((btn, index) => {
           </div>
           <div class="info">
             <p  width="60px">${name}</p>
-            <strong>${price} руб.</strong>
+            <strong class="prices">${price + ' руб.'}.</strong>
           </div>
           <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
         `;
@@ -66,15 +66,23 @@ orderBtns.forEach((btn, index) => {
         const plus = orderCard.querySelector('.plus');
         const minus = orderCard.querySelector('.minus');
         const countSpan = orderCard.querySelector('.count');
-
+        const prices = orderCard.querySelector('.prices');
         plus.addEventListener('click', () => {
           countSpan.textContent = parseInt(countSpan.textContent) + 1;
+
+          const currentPrice = parseFloat(prices.textContent);
+
+          prices.textContent = currentPrice + item.price + ' руб.';
         });
 
         minus.addEventListener('click', () => {
           let count = parseInt(countSpan.textContent);
           if (count > 1) {
             countSpan.textContent = count - 1;
+
+            const currentPrice = parseFloat(prices.textContent);
+
+            prices.textContent = currentPrice - item.price + ' руб.';
           } else {
             orderCard.remove();
           }
