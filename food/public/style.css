@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
 * {
   padding: 0;
   margin: 0;
@@ -179,16 +179,11 @@ main section .three-cards {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 0px;
 }
 main section .three-cards .stars {
   display: flex;
   gap: 5px;
 }
-/* .three-cards .card img:hover {
-  background: linear-gradient(0deg, #A1D214 0%, rgba(255, 255, 255, 0) 100%);
-  z-index: 999;
-} */
 .three-cards h3 {
   width: 290px;
   font-size: 18px;
@@ -233,9 +228,8 @@ main {
 main section {
   flex: 5;
 }
-
 /* Order */
-.order-article .close-btn  {
+.order-article .close-btn {
   background: transparent;
   border: none;
   outline: none;
@@ -290,8 +284,8 @@ main section {
   height: 84px;
   opacity: 1;
   padding: 5px;
-  background-color: #FFFFFF;
-  box-shadow: 0px 0px 20px 0px #0000001A;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px 0px #0000001a;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   position: absolute;
@@ -314,4 +308,33 @@ main section {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+.order-article .order {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+.order-article .price {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+  padding: 5px 10px;
+}
+.order-article .order p {
+  font-weight: 400;
+  font-size: 12px;
+  color: #333333;
+}
+.order-article .order-btn {
+  width: 210px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: #a1d214;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  color: #333333;
 }

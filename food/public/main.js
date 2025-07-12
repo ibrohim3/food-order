@@ -29,7 +29,6 @@ imgPush();
 
 const orderBtns = document.querySelectorAll('.three-cards .order-btn');
 const cartContainer = document.querySelector('.cards');
-
 orderBtns.forEach((btn, index) => {
   btn.addEventListener('click', () => {
     fetch(API)
@@ -37,11 +36,9 @@ orderBtns.forEach((btn, index) => {
       .then((data) => {
         const item = data[index];
         if (!item) return;
-
         const name = item.name;
         const imgSrc = item.img;
         const price = Number(item.price);
-
         const orderCard = document.createElement('div');
         orderCard.classList.add('order-card');
         orderCard.innerHTML = `
@@ -57,37 +54,29 @@ orderBtns.forEach((btn, index) => {
           </div>
           <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
         `;
-
         const closeBtn = orderCard.querySelector('.close-btn');
         closeBtn.addEventListener('click', () => {
           orderCard.remove();
         });
-
         const plus = orderCard.querySelector('.plus');
         const minus = orderCard.querySelector('.minus');
         const countSpan = orderCard.querySelector('.count');
         const prices = orderCard.querySelector('.prices');
         plus.addEventListener('click', () => {
           countSpan.textContent = parseInt(countSpan.textContent) + 1;
-
           const currentPrice = parseFloat(prices.textContent);
-
           prices.textContent = currentPrice + item.price + ' руб.';
         });
-
         minus.addEventListener('click', () => {
           let count = parseInt(countSpan.textContent);
           if (count > 1) {
             countSpan.textContent = count - 1;
-
             const currentPrice = parseFloat(prices.textContent);
-
             prices.textContent = currentPrice - item.price + ' руб.';
           } else {
             orderCard.remove();
           }
         });
-
         cartContainer.appendChild(orderCard);
       });
   });

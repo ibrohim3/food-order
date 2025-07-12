@@ -10,7 +10,13 @@
     />
     <meta name="technology" content="technology: HTML, CSS, JS" />
     <title>Магазин-Лайм</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Style Css -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -54,7 +60,6 @@
           <li><a href="#">Бонусная программа</a></li>
         </ul>
       </nav>
-
       <nav class="nav">
         <div class="btn-inp">
           <button class="btn" aria-label="Katalogni ochish">
@@ -87,90 +92,109 @@
       </nav>
     </header>
     <main>
-        <section>
-          <h2>Рецепты</h2>
-          <div class="selects">
-            <select>
-              <option value="Категория">Категория</option>
-              <option value="Салаты">Салаты</option>
-              <option value="Время приготовления">Время приготовления</option>
-            </select>
-            <select>
-              <option value="Кухня">Кухня</option>
-              <option value="Время приготовления">Время приготовления</option>
-            </select>
-            <select>
-              <option value="Время приготовления">Время приготовления</option>
-              <option value="Время приготовления">Время приготовления</option>
-            </select>
-            <select>
-              <option value="Продукты">Продукты</option>
-            </select>
-          </div>
-          <h2>Салаты</h2>
-          <div class="three-cards">
-            <div class="food-card">
-              <h3 class="food-name"></h3>
-              <div class="stars">
-                <p class="time"></p>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-
-              </div>
-              <button class="order-btn">Купить ингредиенты</button>
+      <section>
+        <h2>Рецепты</h2>
+        <div class="selects">
+          <select>
+            <option value="Категория">Категория</option>
+            <option value="Салаты">Салаты</option>
+            <option value="Время приготовления">Время приготовления</option>
+          </select>
+          <select>
+            <option value="Кухня">Кухня</option>
+            <option value="Время приготовления">Время приготовления</option>
+          </select>
+          <select>
+            <option value="Время приготовления">Время приготовления</option>
+            <option value="Время приготовления">Время приготовления</option>
+          </select>
+          <select>
+            <option value="Продукты">Продукты</option>
+          </select>
+        </div>
+        <h2>Салаты</h2>
+        <div class="three-cards">
+          <div class="food-card">
+            <h3 class="food-name"></h3>
+            <div class="stars">
+              <p class="time"></p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
             </div>
-            <div class="food-card">
-              <h3 class="food-name"></h3>
-              <div class="stars">
-                <p class="time"></p>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <button class="order-btn">Купить ингредиенты</button>
-            </div>
-            <div class=" food-card">
-              <h3 class="food-name"></h3>
-              <div class="stars">
-                <p class="time"></p>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <button class="order-btn">Купить ингредиенты</button>
-            </div>
-            
+            <button class="order-btn">Купить ингредиенты</button>
           </div>
-        </section>
-        <article class="order-article">
-          <div class="cards">
-            <!-- <div class="order-card">
-              <img src="./images/food-5 sugar.png" alt="">
-              <div class="counter">
-                <div class="plus">+</div>
-                <span class="count">0</span>
-                <div class="minus">-</div>
-              </div>
-              <div class="info">
-                <p>Макаронные изделия Макфа</p>
-                <strong>120 руб.</strong>
-              </div>
-              <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
-            </div> -->
-          </div>
-          <div class="order">
-            <div class="price">
-              <p>Итого,руб:</p>
-              <strong>120,85</strong>
+          <div class="food-card">
+            <h3 class="food-name"></h3>
+            <div class="stars">
+              <p class="time"></p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
             </div>
-            <button class="order-btn">Подтвердить заказ</button>
+            <button class="order-btn">Купить ингредиенты</button>
           </div>
-        </article>
-      </main>
-      <script src="main.js"></script>
+          <div class="food-card">
+            <h3 class="food-name"></h3>
+            <div class="stars">
+              <p class="time"></p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <button class="order-btn">Купить ингредиенты</button>
+          </div>
+        </div>
+        <!-- <div class="three-cards">
+          <div class="food-card">
+            <h3 class="food-name"></h3>
+            <div class="stars">
+              <p class="time"></p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <button class="order-btn">Купить ингредиенты</button>
+          </div>
+          <div class="food-card">
+            <h3 class="food-name"></h3>
+            <div class="stars">
+              <p class="time"></p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <button class="order-btn">Купить ингредиенты</button>
+          </div>
+          <div class="food-card">
+            <h3 class="food-name"></h3>
+            <div class="stars">
+              <p class="time"></p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <button class="order-btn">Купить ингредиенты</button>
+          </div>
+        </div> -->
+      </section>
+      <article class="order-article">
+        <div class="cards"></div>
+        <div class="order">
+          <div class="price">
+            <p>Итого,руб:</p>
+            <strong>120,85</strong>
+          </div>
+          <button class="order-btn">Подтвердить заказ</button>
+        </div>
+      </article>
+    </main>
+    <script src="main.js"></script>
   </body>
 </html>
